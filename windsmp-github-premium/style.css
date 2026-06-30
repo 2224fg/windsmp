@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#050008;color:white;overflow-x:hidden}
+#particles{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 15% 20%,#6f00ff66,transparent 30%),radial-gradient(circle at 85% 15%,#ff00dd44,transparent 25%),linear-gradient(180deg,#050008,#140021 60%,#030006)}
+.navbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:#050008cc;border-bottom:1px solid #9b00ff66;backdrop-filter:blur(14px)}
+.logo{font-size:28px;font-weight:900;text-transform:uppercase;text-shadow:0 0 18px #a600ff}.logo span,h1 span,footer span{color:#c44dff}
+nav{display:flex;gap:25px}nav a{color:#ddd;text-decoration:none;font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:1px}nav a:hover{color:#f35cff}
+button,.btn,.rank a{cursor:pointer;border:0;border-radius:12px;padding:14px 22px;color:white;background:linear-gradient(135deg,#d000ff,#6500ff);font-weight:900;text-decoration:none;box-shadow:0 0 22px #8c00ff}
+.hero{min-height:650px;display:flex;align-items:center;justify-content:space-between;gap:50px;padding:70px 7%}
+.mini{color:#ff63f7;font-weight:900;letter-spacing:5px;margin-bottom:14px}
+h1{font-size:110px;line-height:.9;text-transform:uppercase;text-shadow:0 0 35px #8e00ff}
+.desc{max-width:600px;color:#ddd;font-size:21px;margin:25px 0;line-height:1.5}
+.buttons{display:flex;gap:16px;flex-wrap:wrap}.ghost{background:#12001f;border:1px solid #bd4cff}
+.serverCard{width:360px;min-height:420px;border:1px solid #9b00ff;border-radius:24px;background:linear-gradient(180deg,#19002bcc,#07000bcc);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 0 45px #8c00ff66;animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-16px)}}
+.cube{width:140px;height:140px;background:linear-gradient(135deg,#9b00ff,#ff00dd);border-radius:22px;box-shadow:0 0 40px #d000ff;transform:rotate(12deg);margin-bottom:35px}
+.features{width:92%;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.features div,.statusBox,details{background:#09000fcc;border:1px solid #7000aa;border-radius:18px;padding:28px;box-shadow:0 0 20px #48007566}.features b{font-size:22px}.features p{color:#bbb;margin-top:10px}
+.shop,.status,.faq{width:92%;margin:70px auto}.shop h2,.status h2,.faq h2{text-align:center;font-size:48px;margin-bottom:15px;text-shadow:0 0 20px #a600ff}.center{text-align:center;color:#bbb;margin-bottom:28px}
+.rankGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.rank{position:relative;padding:34px;border-radius:24px;background:#09000fcc;border:1px solid currentColor;text-align:center;transition:.25s;overflow:hidden}.rank:hover{transform:translateY(-12px) scale(1.02);box-shadow:0 0 40px currentColor}.rank h3{font-size:52px;margin:20px 0}.rank p{color:#ddd}.rank ul{list-style:none;text-align:left;margin:25px auto;max-width:260px}.rank li{padding:8px 0;color:#eee}.rank li:before{content:"✓ ";color:#00ff7b;font-weight:900}.rank strong{display:block;font-size:30px;margin-bottom:22px}.rank span{position:absolute;top:18px;right:18px;font-size:12px;background:#ffffff18;border:1px solid #ffffff55;border-radius:999px;padding:7px 12px}.gvip{color:#4dff6d}.boss{color:#ff4545}.wind{color:#ca55ff}
+.statusBox{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:850px;margin:auto}.dot{width:18px;height:18px;border-radius:50%;background:#00ff7b;box-shadow:0 0 16px #00ff7b}.statusBox p{color:#bbb}
+details{max-width:850px;margin:14px auto}summary{cursor:pointer;font-weight:900;font-size:18px}details p{color:#ccc;margin-top:14px}
+footer{text-align:center;padding:45px;border-top:1px solid #7000aa;background:#050008cc}footer b{font-size:34px;text-transform:uppercase}footer p{color:#aaa;margin-top:8px}
+@media(max-width:950px){.navbar{flex-direction:column;gap:15px}nav{flex-wrap:wrap;justify-content:center}.hero{flex-direction:column;text-align:center}.hero h1{font-size:64px}.buttons{justify-content:center}.features,.rankGrid{grid-template-columns:1fr}.serverCard{width:100%;max-width:360px}.statusBox{flex-direction:column;text-align:center}}
