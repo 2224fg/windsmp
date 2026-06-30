@@ -1,131 +1,153 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WindSMP</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WindSMP • Sklep i Serwer Minecraft</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <canvas id="particles"></canvas>
+  <div class="lightning l1"></div>
+  <div class="lightning l2"></div>
 
-  <header class="navbar">
-    <div class="logo">⚡ Wind<span>SMP</span></div>
+  <header class="nav">
+    <a class="logo" href="#start">☠ WIND<span>SMP</span></a>
     <nav>
       <a href="#start">Start</a>
-      <a href="#rangi">Rangi</a>
+      <a href="#sklep">Sklep</a>
       <a href="#status">Status</a>
       <a href="#faq">FAQ</a>
       <a href="https://discord.gg/TWOJ-LINK" target="_blank">Discord</a>
     </nav>
-    <button onclick="copyIP()" class="ipBtn">Skopiuj IP</button>
+    <button class="ip" onclick="copyIP()">● PLAY.WINDSMP.PL</button>
   </header>
 
-  <section id="start" class="hero">
-    <div class="heroText">
-      <p class="mini">NAJLEPSZY SERWER MINECRAFT</p>
-      <h1>Wind<span>SMP</span></h1>
-      <p class="desc">Dołącz do serwera, zdobywaj itemy, walcz z graczami i zostań legendą WindSMP.</p>
-      <div class="buttons">
-        <button onclick="copyIP()" class="btn main">🎮 Skopiuj IP</button>
-        <a href="#rangi" class="btn ghost">🛒 Zobacz rangi</a>
+  <main>
+    <section id="start" class="hero reveal">
+      <div class="heroContent">
+        <p class="eyebrow">👑 WYRÓŻNIAJ SIĘ NA SERWERZE! 👑</p>
+        <h1><span>KOLOROWY</span><br>NICK</h1>
+        <p class="heroDesc">Animowane kolory, neonowy styl i najlepsze rangi na WindSMP.</p>
+        <div class="heroActions">
+          <a href="#sklep" class="btn primary">🛒 Kup teraz</a>
+          <button onclick="copyIP()" class="btn secondary">📋 Skopiuj IP</button>
+        </div>
       </div>
-    </div>
 
-    <div class="serverCard">
-      <div class="cube"></div>
-      <h2>play.windsmp.pl</h2>
-      <p>Kliknij i wbijaj na serwer!</p>
-    </div>
-  </section>
+      <div class="playerCard">
+        <div class="minecraftHead">
+          <div class="hair"></div>
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+        </div>
+        <div class="sword"></div>
+        <div class="priceBox">
+          <strong>od 4,99 PLN</strong>
+          <span>Jednorazowa płatność</span>
+        </div>
+      </div>
+    </section>
 
-  <section class="features">
-    <div><b>⚔️ PvP</b><p>Walki, eventy i nagrody.</p></div>
-    <div><b>💰 Ekonomia</b><p>Sklep, handel i rozwój.</p></div>
-    <div><b>🎁 Dropy</b><p>Klucze, skrzynki i bonusy.</p></div>
-    <div><b>⚡ Stabilność</b><p>Ładny wygląd i brak lagów.</p></div>
-  </section>
+    <section class="features reveal">
+      <div class="feature">💬 <b>Chat, tab i nad głową</b><span>Wszędzie widoczny</span></div>
+      <div class="feature">🌈 <b>Animowane kolory</b><span>Płynne przejścia</span></div>
+      <div class="feature">🛡️ <b>Bezpieczne i fair</b><span>Nie daje przewagi</span></div>
+      <div class="feature">🚀 <b>Szybka realizacja</b><span>Natychmiast po zakupie</span></div>
+    </section>
 
-  <section id="rangi" class="shop">
-    <h2>Wybierz rangę</h2>
-    <p class="center">Podmień linki Tebex w pliku index.html.</p>
+    <section id="sklep" class="shop reveal">
+      <div class="sectionTitle">
+        <p>⚡ SKLEP WINDSMP ⚡</p>
+        <h2>Wybierz swoją rangę</h2>
+      </div>
 
-    <div class="rankGrid">
-      <article class="rank gvip">
-        <span>POPULARNA</span>
-        <h3>GVIP</h3>
-        <p>Dobra ranga na start.</p>
-        <ul>
-          <li>Kolorowy nick</li>
-          <li>Prefix GVIP</li>
-          <li>Dodatkowe komendy</li>
-          <li>Bonusy na serwerze</li>
-        </ul>
-        <strong>4,99 PLN</strong>
-        <a href="https://TWOJ-SKLEP.tebex.io/" target="_blank">Kup teraz</a>
-      </article>
+      <div class="cards">
+        <article class="rank gvip">
+          <div class="crown">♛</div>
+          <p class="label">POPULARNA</p>
+          <h3>GVIP</h3>
+          <p class="desc">Idealna ranga na start przygody.</p>
+          <ul>
+            <li>Kolorowy nick</li>
+            <li>Prefix GVIP</li>
+            <li>Dostęp do /back</li>
+            <li>Większy limit sethome</li>
+          </ul>
+          <strong>4,99 PLN</strong>
+          <a href="https://TWOJ-SKLEP.tebex.io/" target="_blank">Kup GVIP</a>
+        </article>
 
-      <article class="rank boss">
-        <span>MOCNA</span>
-        <h3>BOSS</h3>
-        <p>Dla graczy, którzy chcą się wyróżnić.</p>
-        <ul>
-          <li>Kolorowy nick</li>
-          <li>Prefix BOSS</li>
-          <li>Więcej komend</li>
-          <li>Większe bonusy</li>
-        </ul>
-        <strong>9,99 PLN</strong>
-        <a href="https://TWOJ-SKLEP.tebex.io/" target="_blank">Kup teraz</a>
-      </article>
+        <article class="rank boss hot">
+          <div class="crown">♛</div>
+          <p class="label">BESTSELLER</p>
+          <h3>BOSS</h3>
+          <p class="desc">Mocna ranga dla aktywnych graczy.</p>
+          <ul>
+            <li>Kolorowy nick</li>
+            <li>Prefix BOSS</li>
+            <li>Dostęp do /feed</li>
+            <li>Lepsze bonusy</li>
+          </ul>
+          <strong>9,99 PLN</strong>
+          <a href="https://TWOJ-SKLEP.tebex.io/" target="_blank">Kup BOSS</a>
+        </article>
 
-      <article class="rank wind">
-        <span>NAJLEPSZA</span>
-        <h3>WIND</h3>
-        <p>Najwyższa ranga na WindSMP.</p>
-        <ul>
-          <li>Najładniejszy prefix</li>
-          <li>Najwięcej bonusów</li>
-          <li>Efekt premium</li>
-          <li>Największe wyróżnienie</li>
-        </ul>
-        <strong>19,99 PLN</strong>
-        <a href="https://TWOJ-SKLEP.tebex.io/" target="_blank">Kup teraz</a>
-      </article>
-    </div>
-  </section>
+        <article class="rank wind">
+          <div class="crown">♛</div>
+          <p class="label">NAJLEPSZA</p>
+          <h3>WIND</h3>
+          <p class="desc">Najwyższa ranga dla legend serwera.</p>
+          <ul>
+            <li>Najładniejszy prefix</li>
+            <li>Najwięcej bonusów</li>
+            <li>Efekt premium</li>
+            <li>Największe wyróżnienie</li>
+          </ul>
+          <strong>19,99 PLN</strong>
+          <a href="https://TWOJ-SKLEP.tebex.io/" target="_blank">Kup WIND</a>
+        </article>
+      </div>
+    </section>
 
-  <section id="status" class="status">
-    <h2>Status serwera</h2>
-    <div class="statusBox">
-      <div class="dot"></div>
+    <section id="status" class="status reveal">
       <div>
-        <b>play.windsmp.pl</b>
-        <p id="statusText">Kliknij „Sprawdź status”.</p>
+        <p class="onlineDot">● ONLINE</p>
+        <h2>play.windsmp.pl</h2>
+        <p id="statusText">Kliknij przycisk, aby sprawdzić liczbę graczy.</p>
       </div>
-      <button onclick="checkServer()">Sprawdź status</button>
-    </div>
-  </section>
+      <div class="statusButtons">
+        <button onclick="checkServer()" class="btn primary">Sprawdź status</button>
+        <button onclick="copyIP()" class="btn secondary">Skopiuj IP</button>
+      </div>
+    </section>
 
-  <section id="faq" class="faq">
-    <h2>FAQ</h2>
-    <details>
-      <summary>Jak kupić rangę?</summary>
-      <p>Kliknij „Kup teraz”, a strona przeniesie Cię do Tebex.</p>
-    </details>
-    <details>
-      <summary>Jak wejść na serwer?</summary>
-      <p>Skopiuj IP: play.windsmp.pl i dodaj serwer w Minecraft.</p>
-    </details>
-    <details>
-      <summary>Czy płatności są bezpieczne?</summary>
-      <p>Tak, płatności obsługuje Tebex.</p>
-    </details>
-  </section>
+    <section class="discord reveal">
+      <h2>Dołącz do społeczności WindSMP</h2>
+      <p>Eventy, konkursy, ogłoszenia i kontakt z administracją.</p>
+      <a href="https://discord.gg/TWOJ-LINK" target="_blank" class="btn primary">💬 Wejdź na Discord</a>
+    </section>
+
+    <section id="faq" class="faq reveal">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Jak kupić rangę?</summary>
+        <p>Kliknij przycisk przy wybranej randze. Strona przeniesie Cię do Tebex.</p>
+      </details>
+      <details>
+        <summary>Jak wejść na serwer?</summary>
+        <p>Skopiuj IP play.windsmp.pl i dodaj serwer w Minecraft.</p>
+      </details>
+      <details>
+        <summary>Czy płatności są bezpieczne?</summary>
+        <p>Tak, płatności obsługuje Tebex.</p>
+      </details>
+    </section>
+  </main>
 
   <footer>
-    <b>Wind<span>SMP</span></b>
-    <p>© 2026 WindSMP</p>
+    <h2>WIND<span>SMP</span></h2>
+    <p>Twoja przygoda, Twój styl.</p>
   </footer>
 
   <script src="script.js"></script>
