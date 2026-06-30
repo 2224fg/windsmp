@@ -1,4 +1,4 @@
-const SERVER_IP = "play.windsmp.pl";
+const SERVER_IP = "WindSMP.pl";
 
 function copyIP(){
   navigator.clipboard.writeText(SERVER_IP);
